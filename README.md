@@ -1,4 +1,2 @@
-# VanshBeatzz
-Backend: `cd backend`, copy `.env.example` to `.env`, `npm install`, `npm start` (port 4000).
-Frontend: `cd frontend`, `npm install`, `npm run dev` (port 5173). Needs MongoDB running locally or an Atlas URI in `.env`.
-Demo login: demo@vanshbeatzz.dev / Demo@12345 (created by the seed on first start).
+# Vanshbeatzz
+VanshBeatzz is a modern music streaming app inspired by Spotify, offering a seamless way to discover, explore, and enjoy music. With a sleek interface, personalized playlists, trending tracks, smart search, and smooth playback, VanshBeatzz brings your favorite music together in one place for an immersive listening experience anytime, anywhere.
