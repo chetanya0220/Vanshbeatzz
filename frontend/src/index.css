@@ -1,0 +1,16 @@
+*{box-sizing:border-box}body{margin:0;background:#0b0b0f;color:#eee;font-family:system-ui,sans-serif}
+.app{display:grid;grid-template-columns:220px 1fr;min-height:100vh;padding-bottom:90px}
+nav{background:#000;padding:20px;display:flex;flex-direction:column;gap:14px;position:sticky;top:0;height:100vh}
+nav a{color:#aaa;text-decoration:none;display:flex;gap:10px;align-items:center}nav a.active{color:#1ed760}
+.logo{font-size:22px;font-weight:800;background:linear-gradient(90deg,#1ed760,#a855f7);-webkit-background-clip:text;color:transparent}
+main{padding:24px;background:linear-gradient(#2a1745,#0b0b0f 300px)}h2{margin:24px 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:16px}
+.card{background:#16161d;padding:12px;border-radius:10px;cursor:pointer;transition:.2s}.card:hover{background:#22222c;transform:translateY(-3px)}
+.card img{width:100%;aspect-ratio:1;border-radius:8px;object-fit:cover}.card b,.card small{display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.card small{color:#999}
+button,input,select{font:inherit}button{background:none;border:0;color:#eee;cursor:pointer}.btn{background:#1ed760;color:#000;padding:8px 18px;border-radius:20px;font-weight:700}
+input{background:#1d1d26;border:1px solid #333;color:#fff;padding:10px 14px;border-radius:8px;width:100%;max-width:420px;margin:4px 0;display:block}
+.row{display:flex;align-items:center;gap:12px;padding:8px;border-radius:8px}.row:hover{background:#1d1d26}.row img{width:44px;height:44px;border-radius:6px}.row .t{flex:1}
+.bar{position:fixed;bottom:0;left:0;right:0;height:84px;background:#000;border-top:1px solid #222;display:grid;grid-template-columns:1fr 2fr 1fr;align-items:center;padding:0 16px;gap:12px}
+.ctl{display:flex;gap:14px;justify-content:center;align-items:center}.on{color:#1ed760}input[type=range]{padding:0;border:0;max-width:none;margin:0}
+.err{color:#ff6b6b}.sk{height:180px;background:#1a1a22;border-radius:10px;animation:p 1.2s infinite}@keyframes p{50%{opacity:.4}}
+@media(max-width:700px){.app{grid-template-columns:1fr}nav{flex-direction:row;height:auto;position:static;overflow:auto}.bar{grid-template-columns:1fr auto}.bar .vol{display:none}}
