@@ -3,7 +3,11 @@ import { Routes, Route, NavLink, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { Play, Pause, SkipBack, SkipForward, Shuffle, Repeat, Volume2, VolumeX, Heart, Home, Search, Library } from 'lucide-react';
 
-const api = axios.create({ baseURL: '/api' });
+
+const api = axios.create({
+  baseURL: import.meta.env.VITE_API_URL || '/api'
+});
+
 api.interceptors.request.use(c => { const t = localStorage.getItem('vb_token'); if (t) c.headers.Authorization = 'Bearer ' + t; return c; });
 const msg = e => e.response?.data?.error || 'Something went wrong';
 const PC = createContext(); const usePlayer = () => useContext(PC);
